@@ -1,0 +1,83 @@
+body{
+    
+    margin: 0;
+}
+.nav{
+    background: rgb(231, 27, 27);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.logo img{
+    width: 30%;
+}
+.search{
+    position: absolute;
+    left: 37%;
+}
+.search input{
+    color: #0d0d0d;
+	padding: 20px 70% 20px;
+	border-radius: 25px;
+    border: 0;
+    box-shadow: 0 0 20px rgba(192, 203, 251, 0.7);
+    outline: none;
+    font-size: 16px;
+    background-image: url(fotos/lupa.jpg);
+    background-size: 59px;
+    background-repeat: no-repeat;
+}
+.loguear{
+    text-decoration: none;
+    color: white;
+	margin: 20px 4%;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    width: 15%;
+	padding: 20px 15px 20px;
+	border-radius: 25px;
+    box-shadow: 0 0 20px rgb(228, 229, 233);
+    text-align: center;
+    font-size: 17px;
+}
+
+.loguear:hover{
+	background-color: gray;
+}
+
+.menu img{
+    width: 20%;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.imag{
+    text-align: center;   
+}
+
+.imag img{
+    width: 300px;
+    height: 300px;
+    margin-right: 100px;
+    border: 3px solid black;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 97%;
+    font-size: 20px;
+    text-align: left; /* Centrar el contenido horizontalmente */
+    vertical-align: middle; 
+    max-height: 300px; /* Altura máxima deseada para cada celda de la columna "Historia" */
+    overflow: auto; 
+    border: 1px solid black;
+    margin-left: 30px ;
+}
+
+.table thead tr th:nth-child(4){
+    max-width: 150px;
+}

@@ -1,0 +1,230 @@
+body{
+    background-image: url(fotos/fondo2.jpg);
+    margin: 0;
+    
+    position: absolute;
+}
+.nav{
+    background: rgb(231, 27, 27);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+footer{
+    position: absolute;
+    
+}
+.logo img{
+    width: 30%;
+}
+
+.search{
+    position: absolute;
+    left: 37%;
+}
+.search input{
+    color: #0d0d0d;
+	padding: 20px 70% 20px;
+	border-radius: 25px;
+    border: 0;
+    box-shadow: 0 0 20px rgba(192, 203, 251, 0.7);
+    outline: none;
+    font-size: 16px;
+    background-image: url(fotos/lupa.jpg);
+    background-size: 59px;
+    background-repeat: no-repeat;
+}
+.loguear{
+    text-decoration: none;
+    color: white;
+	margin: 20px 4%;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    width: 15%;
+	padding: 20px 15px 20px;
+	border-radius: 25px;
+    box-shadow: 0 0 20px rgb(228, 229, 233);
+    text-align: center;
+    font-size: 17px;
+}
+
+.loguear:hover{
+	background-color: gray;
+}
+
+.menu img{
+    width: 20%;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+ li ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(54, 17, 17);
+    position: absolute;
+    top: 90px;
+    padding: 14px 0px;
+    opacity: 0;
+    box-shadow: 0px 0px 6px 0px rgba(255, 0, 0, 0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+
+.nav li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+.nav li ul:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left:  12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid rgba(255, 0, 0, 0.5);
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+.nav li ul li a{
+    display: block;
+    color: white;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+    text-decoration: none;
+}
+.nav li ul li a:hover{
+    background: rgb(23, 23, 82);
+    color: white;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+.elem_museo{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 25%;
+    width: 20%;
+    padding: 3% 4%;
+}
+
+.art{
+    border: 3px solid #0d0d0d;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.producto_titulo{
+    color: black;
+    font-size: 19px;
+    margin: 0px;
+}
+
+.descripcion{
+    font-size: 18px;
+    margin: 18px 0 30px;
+}
+
+.art img{
+    width: 200px;
+    height: 200px;
+}
+
+.art a{
+    border:5px solid transparent;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+	padding: 10px 25px 10px;
+	border-radius: 25px;
+    box-shadow: 0 0 10px rgb(139, 73, 73);
+    text-align: center;
+    font-size: 17px;
+}
+
+.art a:hover{
+	background-color: gray;
+}
+
+.menu_sist{
+    background-color: #fff;
+	box-shadow: 0 0 20px rgba( 0, 0, 0, 0.2);
+    padding: 40px 35px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    text-align: center;
+    margin: 30px;
+    float: left;
+
+    position: fixed;
+}
+.op{
+    color: #0d0d0d;
+	width: 90%;
+	padding: 25px 100px;
+	border-radius: 25px;
+    border: 0;
+	margin-top: 30px;
+    box-shadow: 0 0 20px rgba(192, 203, 251, 0.7);
+    outline: none;
+    font-size: 16px;
+}
+ul{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+ ul a:hover{
+    background-color: rgb(196, 196, 196);
+}
+.derecha{
+    background-color: #fff;
+	box-shadow: 0 0 20px rgba( 0, 0, 0, 0.2);
+    padding-top: 40px;
+    padding: 0 35px;
+    padding-bottom: 150px;
+    border-radius: 25px;
+    width: 90%;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 3%;
+    margin-right: 5%;
+}
+.derecha h1{
+    bottom: 70px;
+    padding: 20px;
+}
+.derecha table th{
+    border: 1px solid black;
+    font-size: 1.2em;
+    padding: 10px;
+}
+.derecha table input{
+    width: 190px;
+    height: 50px;
+}
+.derecha table img{
+    width: 70px;
+    height: 70px;
+}
+.segundo{
+    padding: 0;
+}
+.table{
+    background: white;
+}
